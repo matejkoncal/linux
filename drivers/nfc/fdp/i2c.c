@@ -147,7 +147,7 @@ static int fdp_nci_i2c_read(struct fdp_i2c_phy *phy, struct sk_buff **skb)
 			goto flush;
 		}
 
-		/* Check packet integruty */
+		/* Check packet integrity */
 		for (lrc = i = 0; i < r; i++)
 			lrc ^= tmp[i];
 
